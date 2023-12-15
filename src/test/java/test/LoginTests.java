@@ -36,7 +36,7 @@ public class LoginTests extends reqresConfig {
 
         Assert.assertEquals(response.getStatusCode(),200);
 
-        logger.info("login successful******");
+        logger.info("login successful*********");
 
     }
 
