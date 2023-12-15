@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Betika API Test Suite" parallel="false" thread-count="2">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+        <listener class-name="utilities.RetryListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Betika" >
+
+        <classes>
+            <class name="test.RegisterTests"/>
+            <class name="test.LoginTests"/>
+            <class name="test.CreateUserTests"/>
+            <class name="test.UpdateUserTests"/>
+            <class name="test.DeleteUserTests"/>
+
+        </classes>
+    </test>
+</suite>
